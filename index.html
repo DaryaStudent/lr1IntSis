@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Лаб1</title>
+</head>
+
+<body>
+
+<form id="form">
+
+    <input type="file" name="fileInput" onchange="FormReader.readFile(this)">
+    <br>
+    <label for="startInput">Начальная вершина:</label>
+    <input type="text" name="startInput" id="startInput">
+    <br>
+    <label for="finishInput">Конечная вершина:</label>
+    <input type="text" name="finishInput" id="finishInput">
+    <br>
+
+</form>
+<button id="button">Найти путь</button>
+
+<div class="output_form">
+    <b>Обход в ширину</b><br>
+    Путь:
+    <div id="bfs_path_output" class="output">
+    </div>
+    Кол-во шагов:
+    <div id="bfs_stepsCnt_output" class="output">
+    </div>
+</div>
+
+<div class="output_form">
+    <b>Обход в глубину</b><br>
+    Путь:
+    <div id="dfs_path_output" class="output">
+    </div>
+    Кол-во шагов:
+    <div id="dfs_stepsCnt_output" class="output">
+    </div>
+</div>
+
+<div class="output_form">
+    <b>Рекурсивный обход в глубину</b><br>
+    Путь:
+    <div id="dfsRec_path_output" class="output">
+    </div>
+    Кол-во шагов:
+    <div id="dfsRec_stepsCnt_output" class="output">
+    </div>
+</div>
+
+<div class="output_form">
+    <b>Модернизированный-рекурсивный обход в глубину</b><br>
+    Путь:
+    <div id="dfsRecMod_path_output" class="output">
+    </div>
+    Кол-во шагов:
+    <div id="dfsRecMod_stepsCnt_output" class="output">
+    </div>
+</div>
+
+<script src="js/Dfs.js"></script>
+<script src="js/DfsRecMod.js"></script>
+<script src="js/DfsRec.js"></script>
+<script src="js/Bfs.js"></script>
+<script src="js/FormReader.js"></script>
+<script src="js/Output.js"></script>
+<script src="js/Vortex.js"></script>
+<script src="js/Graph.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+
+</html>
